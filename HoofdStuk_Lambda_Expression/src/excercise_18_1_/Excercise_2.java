@@ -7,7 +7,11 @@ public class Excercise_2 {
 
 		
 
-		TextPrinter tp = new TextPrinter("");
+		TextPrinter tp = new TextPrinter(new String[] {"Elena", "jack", "mieke", "sridevi",
+        		"raja", "sellena" ,"shazeel"});
+		
+		System.out.println("the names contains more than 4 letters" + " ");
+        
 
 		tp.printFilteredWords(new WordFilter() {
 			public boolean isValid(String s) {
@@ -15,25 +19,21 @@ public class Excercise_2 {
 			}
 		});
 
-		String[] m = { "Mieke", "Chivanjee", "Katrina", "Madhubala", "Juhichawla", "Siridevi", "Kiran", "Aamir", "Raja",
-				"Shazeel", "Zakia", "Seleena", "Samantha" };
+		 
 
-		System.out.println("the names contains more than 4 letters" + " ");
+		
 
-		WordFilter w = s -> s.length()>4;
-
-		for (String el : m) {
-
-			if (w.isValid(el)) {
-
-				System.out.println(el);
-
-			}
-		}
+	//tp.printFilteredWords( s -> s.length()>4);
+		
 	}
 
+		 
+			}
+		
+	
 
-}
+
+
 
 
 

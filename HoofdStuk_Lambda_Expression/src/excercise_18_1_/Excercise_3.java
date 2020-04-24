@@ -7,35 +7,31 @@ public class Excercise_3 {
 
 			
 
-				TextPrinter tp = new TextPrinter("");
+				TextPrinter tp = new TextPrinter(
+						new String[] { "Elena", "jack", "mieke", "sridevi", "raja", "seleena", "shazeel", "Aamir" , "Akshay" });
 
+				System.out.println("the names which start with letter " + "A" + " ");
+				
 				tp.printFilteredWords(new WordFilter() {
 					public boolean isValid(String s) {
 						return s.startsWith("A");
 					}
 				});
 
-				String[] m = { "Mieke", "Chivanjee", "Katrina", "Madhubala", "Juhichawla", "Siridevi", "Kiran", "Aamir", "Raja",
-						"Shazeel", "Zakia", "Seleena", "Samantha" };
+				 
 
-				System.out.println("the names which start with letter " + "A" + " ");
+			 
 
-				WordFilter w = s -> s.startsWith("A");
+				//tp.printFilteredWords( s -> s.startsWith("A"));
 
-				for (String el : m) {
-
-					if (w.isValid(el)) {
-
-						System.out.println(el);
-
+				 
 					}
-				}
+				
 			}
 		
 
 
-	}
-
+	
 
 
 
